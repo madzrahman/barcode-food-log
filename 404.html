@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Barcode Food Log</title>
+    <meta name="description" content="A private food diary with barcode scanning." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Food Log" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F1F4F2" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0E1211" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icon-180.png" />
+    <style id="expo-reset">
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: #f1f4f2;
+        touch-action: manipulation;
+      }
+      @media (prefers-color-scheme: dark) {
+        html,
+        body {
+          background: #0e1211;
+        }
+      }
+      body {
+        overflow: hidden;
+      }
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <link rel="icon" href="/barcode-food-log/favicon.ico"/><script>
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
+</script></head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  <script src="/barcode-food-log/_expo/static/js/web/__expo-metro-runtime-97703ae02682710149335928b974f18d.js" defer></script><script src="/barcode-food-log/_expo/static/js/web/__common-47cc952cc180910fc464411cfbb2a134.js" defer></script><script src="/barcode-food-log/_expo/static/js/web/entry-cf7b38a406c1c91358c488b253492232.js" defer></script>
+</body>
+</html>
